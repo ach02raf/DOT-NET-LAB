@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        @ViewBag.Title
+        
+    </title>
+</head>
+<body>
+    <div>
+        <table class="table table-bordered table-hover" style="margin-top:100px">
+            <tr>
+                <td> Product ID </td>
+                <td> @Model.Id </td>
+            </tr>
+            <tr>
+                <td> Product Name </td>
+                <td> @Model.Name</td>
+            </tr>
+            <tr>
+                <td> Product Price </td>
+                <td> @Model.Prix</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

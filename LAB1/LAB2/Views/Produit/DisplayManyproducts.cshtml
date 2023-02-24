@@ -1,0 +1,37 @@
+﻿
+@{
+    
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <table class="table table-bordered table-hover" style="margin-top:100px">
+
+
+            <tr>
+                <td> Product ID </td>
+                <td> Product Name </td>
+                <td> Product Price </td>
+
+
+            </tr>
+            @foreach (var elm in ViewData["listeProduit"] as List<LAB2.Models.Produit>)
+            {  <tr>
+                <td> @elm.Id </td>
+                <td> @elm.Name</td>
+                <td> @elm.Prix</td>
+            </tr>
+            }
+        </table>
+    
+    </div>
+</body>
+</html>
